@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: rgba(87, 19, 104, 0.753);
   /* box-sizing: border-box; */
 }
 a {
@@ -12,7 +13,11 @@ h1 {
 }
 header {
   height: 100px;
-  background: linear-gradient(45deg, rgb(243, 153, 243), rgba(87, 19, 104, 0.753));
+  background: linear-gradient(
+    45deg,
+    rgb(243, 153, 243),
+    rgba(87, 19, 104, 0.753)
+  );
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -23,17 +28,21 @@ header {
   z-index: 999;
 }
 footer {
-    height: 100px;
-    background: linear-gradient(to top right, rgb(243, 153, 243), rgba(87, 19, 104, 0.753));
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    position: relative;
+  height: 100px;
+  background: linear-gradient(
+    to top right,
+    rgb(243, 153, 243),
+    rgba(87, 19, 104, 0.753)
+  );
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  position: relative;
 }
 .banner {
-  height: 80vh;
+  height: 40vh;
   background: url(/img/bgeye.jpg) no-repeat center / cover;
   display: flex;
   justify-content: center;
@@ -42,6 +51,7 @@ footer {
   font-size: 2rem;
   text-align: center;
   position: relative;
+  animation: openeye linear 2s 1;
 }
 .banner h1 {
   position: relative;
@@ -55,11 +65,11 @@ footer {
   position: absolute;
 }
 footer::before {
-    content: "";
-    background-color: #fff1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
+  content: "";
+  background-color: #fff1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 .info_card {
   border: 1px solid;
@@ -99,7 +109,6 @@ footer::before {
   }
 }
 @media (max-width: 599px) {
-    
   .info {
     grid-template-columns: 1fr;
     gap: 10px;
@@ -107,7 +116,7 @@ footer::before {
   header {
     height: auto;
     flex-direction: column;
-gap: 10px;
+    gap: 10px;
   }
   .container {
     padding: 10px;
