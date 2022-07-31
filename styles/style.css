@@ -91,6 +91,9 @@ footer {
   padding-left: calc(50% - 500px);
   padding-right: calc(50% - 500px);
 }
+.bi-eye {
+  font-size: 90px;
+}
 .ohnonono {
   text-transform: lowercase;
   font-size: xx-small;
