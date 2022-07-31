@@ -5,6 +5,11 @@ body {
   /* background-color: #e8f7fc; */
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .absolu {
   background: linear-gradient(to left top, white 10%, rgb(253, 255, 228) 40%,  rgb(213, 248, 210) );
   box-sizing: border-box;
@@ -77,7 +82,15 @@ a:hover[href*="amenu"] {
   margin-bottom: 20px;
   /* border: 1px solid green; */
 }
-
+footer>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+figure {
+  text-align: center;
+}
 .absolu__logo {
   width: 80px;
   height: 80px;
