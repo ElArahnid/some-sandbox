@@ -67,13 +67,21 @@ footer {
 }
 
 .info_card {
-  border: 1px solid;
+  border: 1px solid rgba(79, 6, 74, 0.8);
+  /* border-image: linear-gradient(-45deg, silver 10%,  rgba(87, 19, 104, 0.753) 50%, rgb(79, 11, 68));; */
+  box-shadow: 2px -2px 5px rgb(51, 20, 41);
   color: #fff;
   padding: 30px;
   border-radius: 10px;
   display: flex;
   gap: 20px;
   font-size: 1.5rem;
+  background: linear-gradient(45deg, silver 10%,  rgba(87, 19, 104, 0.753) 50%, rgb(79, 11, 68));
+}
+.info_card:hover {
+  transform: scale(1.1, 1.1) translate(-5px, -5px);
+  transition: transform linear 200ms;
+  cursor: cell;
 }
 .info {
   background-color: rgba(87, 19, 104, 0.753);
