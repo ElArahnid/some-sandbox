@@ -44,7 +44,7 @@ footer {
 }
 .banner {
   height: 40vh;
-  background: url(img/bgeye.jpg) no-repeat center / cover;
+  background: url(../img/bgeye.jpg) no-repeat center / cover;
   display: flex;
   justify-content: center;
   align-items: center;
